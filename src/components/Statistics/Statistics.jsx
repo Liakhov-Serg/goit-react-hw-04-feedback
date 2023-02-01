@@ -1,7 +1,7 @@
 import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
-export const StatisticCafe = (
+export const Statistics = (
     {
     good = 0,
     neutral = 0,
@@ -29,9 +29,9 @@ export const StatisticCafe = (
         </ul>
     )
 }
-console.log(StatisticCafe);
+// console.log(StatisticCafe);
 
-StatisticCafe.prototype = {
+Statistics.prototype = {
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,

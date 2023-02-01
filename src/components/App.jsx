@@ -1,6 +1,4 @@
-// import React, { component } from 'react';
-
-import { Statistics } from './Statistics/Statistics';
+import { Statistics } from "./Statistics/Statistics";
 
 export const App = () => {
   return (
