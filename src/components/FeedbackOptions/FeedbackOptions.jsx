@@ -1,24 +1,24 @@
-import './Feedback.module.css';
 import PropTypes from 'prop-types';
+import './FeedbackOptions.module.css';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
-    const stateArr = Object.keys(options);
-    console.log(stateArr);
+  const stateArr = Object.keys(options);
+  // console.log(stateArr);
 
-    return (
-        <div>
-            {stateArr.map(option => (
-                <button
-                    key={option}
-                    type="button"
-                    name={option}
-                    onClick={() => onLeaveFeedback(option)}
-                >
-                    {option}
-                </button>
-            ))}
-        </div>
-    );
+  return (
+    <div>
+      {stateArr.map(option => (
+        <button
+          key={option}
+          type="button"
+          name={option}
+          onClick={() => onLeaveFeedback(option)}
+        >
+          {option}
+        </button>
+      ))}
+    </div>
+  );
 };
 
 FeedbackOptions.propTypes = {
