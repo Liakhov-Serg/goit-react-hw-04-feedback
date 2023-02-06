@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 export const Statistics = (
     {
-    good = 0,
-    neutral = 0,
-        bad = 0,
-        total = 0,
-    positiveFeedback = 0 }
+    good = "",
+    neutral = "",
+        bad = "",
+        total = "",
+    positiveFeedback = "", }
 ) => {
     return (
         <ul>
