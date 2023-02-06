@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 export const Statistics = (
     {
-    good = "",
-    neutral = "",
+        good = "",
+        neutral = "",
         bad = "",
         total = "",
-    positiveFeedback = "", }
+        positivePercentage = "", }
 ) => {
     return (
         <ul>
@@ -24,11 +24,11 @@ export const Statistics = (
                 Total: <span>{total}</span>
             </li>
             <li className={css.positiv}>
-                Positive Feedback: <span>{positiveFeedback}%</span>
+                Positive Feedback: <span>{positivePercentage}%</span>
             </li>
         </ul>
-    )
-}
+    );
+};
 // console.log(StatisticCafe);
 
 Statistics.propTypes = {
