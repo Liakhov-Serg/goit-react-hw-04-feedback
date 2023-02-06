@@ -31,7 +31,7 @@ export const Statistics = (
 }
 // console.log(StatisticCafe);
 
-Statistics.prototype = {
+Statistics.propTypes = {
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,

@@ -1,7 +1,7 @@
 .positive {
   font-weight: 900;
   font-size: 20px;
-  color: green;
+  color: rgb(102, 220, 102);
 }
 .positive > span {
   font-size: 25px;
