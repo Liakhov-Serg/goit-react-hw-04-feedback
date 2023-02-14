@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 
 export const Statistics = (
     {
-        good = "",
-        neutral = "",
-        bad = "",
-        total = "",
-        positivePercentage = "", }
+        good,
+        neutral,
+        bad,
+        total,
+        positivePercentage, }
 ) => {
     return (
         <ul>
@@ -36,5 +36,5 @@ Statistics.propTypes = {
   neutral: PropTypes.number,
   bad: PropTypes.number,
   total: PropTypes.number,
-  positive: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  positivePercentage: PropTypes.number,
 };
